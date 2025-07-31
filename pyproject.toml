@@ -1,6 +1,6 @@
 [project]
 name = "convolutional-variational-autoencoder-pytorch"
-version = "0.1.0"
+version = "0.1.1"
 description = "A package to simplify the implementing a variationsl-autoencoder model."
 readme = "README.md"
 requires-python = ">=3.10"

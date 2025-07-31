@@ -98,6 +98,7 @@ class Encoder(Module):
         z = self.mid_block1(z)
         mu = self.mu_out(z)
         logvar = self.logvar_out(z)
+        logvar = torch.clamp(logvar, min=-10.0, max=+10.0)
         return mu, logvar
 
 class Decoder(Module):
